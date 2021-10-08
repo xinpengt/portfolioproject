@@ -1,0 +1,100 @@
+{% extends 'base.html ' %}
+{% load static %}
+
+{% block content %}
+
+
+
+      <div class="row tm-welcome-row">
+        <div class="col-12">
+          <div
+            class="tm-welcome-parallax tm-center-child"
+            data-parallax="scroll"
+            data-image-src="{% static 'img/projects.jpg' %}"
+          >
+            <div class="tm-bg-black-transparent tm-parallax-overlay">
+              <h2>Recent Projects</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="justify-content: center;">
+      <section class="row" style="width: 75%;  ">
+        
+        <div class="col-12 tm-page-cols-container ">
+         
+         
+           
+              <div class="tm-gallery-item">
+                <figure class="effect-bubba">
+                  <img
+                    src="{% static 'img/e.jpg' %}" style="width: 200px; height: 250px;"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2 style="color: black; font-weight: bold;">Ecommerce System</h2>
+                    <p>Click for more details</p>
+                    <a href="/details/">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="tm-gallery-item category-2">
+                <figure class="effect-bubba">
+                  <img
+                    src="{% static 'img/tur.jpg' %}" style="width: 200px; height: 250px;"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2 style="color: black; font-weight: bold;">Tourism Website</h2>
+                    <p>Click for more details</p>
+                    <a href="/details2/"></a>
+                  </figcaption>
+                </figure>
+              </div>
+            
+
+          
+              <div class="tm-gallery-item category-1">
+                <figure class="effect-bubba">
+                  <img style="width: 200px; height: 250px;"
+                    src="{% static 'img/exam.jpg' %}"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2 style="color: black; font-weight: bold;">Online Examination System</h2>
+                    <p>Click for more details</p>
+                    <a href="/details3/">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="tm-gallery-item category-3">
+                <figure class="effect-bubba">
+                  <img
+                    src="{% static 'img/swim.jpg' %}" style="width: 200px; height: 250px;"
+                    alt="Gallery item"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2 style="color: black; font-weight: bold;">Swimming Club Website</h2>
+                    <p>Click for more details</p>
+                    <a href="/details4/">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+        </div>
+             
+         
+        
+      </section>
+
+    
+
+
+
+      <!-- Call to Action -->
+      
+    {% endblock %}

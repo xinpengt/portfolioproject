@@ -1,0 +1,97 @@
+{% extends 'base.html ' %}
+{% load static %}
+
+{% block content %}
+
+      <div class="row tm-welcome-row">
+        <div class="col-12 tm-page-cols-container">
+          <div class="tm-page-col-left tm-welcome-box tm-bg-primary">
+            <p class="tm-welcome-text">
+              <em>Nice to meet you! My name is Tiew Xin Peng!</em>
+            </p>
+          </div>
+          <div class="tm-page-col-right">
+            <div
+              class="tm-welcome-parallax"
+              data-parallax="scroll"
+              data-image-src="{% static 'img/me.jpg' %}"
+            ></div>
+          </div>
+        </div>
+      </div>
+<!-- about me -->
+      <section class="row tm-pt-4 tm-pb-6">
+        <div class="col-12 tm-page-cols-container">
+          <div class="tm-page-col-right">
+            <h2 class="tm-text-secondary tm-mb-5">
+              About me
+            </h2>
+            <p class="tm-mb-6">
+              I'm just starting final year of Software Engineering studies at Inti International University in Nilai, Seremban.
+              
+            </p>
+            <p class="mb-0">
+           	  My portfilio is a representation of all what I have accomplished as a software engineering student.  I'm very into web development as well as web design, looking forward to the opportunities to learn more about the full-stack web development.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="tm-page-col-right">
+        <div class="row tm-pt-7 tm-pb-6">
+          <div class="col-md-6 tm-home-section-2-left">
+            <div
+              class="img-fluid tm-mb-4 tm-small-parallax"
+              data-parallax="scroll"
+              data-image-src="{% static 'img/skills.png' %}"></div>
+            <div>
+              <h3 class="tm-text-secondary tm-mb-2">
+               Technical skills
+              </h3>
+              <ul style="list-style-type:square;margin-left: 20px;">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+                <li>Java</li>
+                <li>ASP.NET C#</li>
+                <li>Django</li>
+                <li>C++</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 tm-home-section-2-right">
+            <div
+              class="img-fluid tm-mb-4 tm-small-parallax"
+              data-parallax="scroll"
+              data-image-src="{% static 'img/other.jpg' %}"></div>
+            <div>
+              <h3 class="tm-text-secondary tm-mb-2">
+                Other skills
+              </h3>
+              <p class="tm-section-2-text" >
+               
+                <ul style="list-style-type:square;margin-left: 20px;">
+                    <li>Time management</li>
+                    <li>Teamwork</li>
+                    <li>Attitude</li>
+                  </ul>
+              </p>
+
+              <h3 class="tm-text-secondary tm-mb-2 mt-6">
+                Languages
+               </h3>
+               <ul style="list-style-type:square;margin-left: 20px;">
+                <li>Mandarin</li>
+                <li>English</li>
+                <li>Malay</li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- row -->
+
+     
+      {% endblock %}

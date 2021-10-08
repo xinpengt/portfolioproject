@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+  <div class="cover">
+
+    <div class="row tm-welcome-row">
+        <div class="col-12 tm-page-cols-container">
+          <div class="tm-page-col-left tm-welcome-box tm-bg-gradient" style="height: 550px;">
+            <div class="col-12">
+            <p class="tm-welcome-text col-10">
+              <em>Web Application Based Ecommerce with Face Recognition System</em>
+             
+            </p>
+            <button type="button" class="btn btn-outline-secondary col-10" style="width: 60%; margin-left: 70px ;margin-right: 70px;"> <a href="https://github.com/xinpengt/Ecommerce" style="color: black;"> Source code</a></button>
+           
+          
+          </div>
+        </div>
+          <div class="tm-page-col-right" >
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color: gray; "></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color: gray; "></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2" style="background-color: gray; "></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3" style="background-color: gray; "></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4" style="background-color: gray; "></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5" style="background-color: gray; "></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="6" style="background-color: gray; "></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="7" style="background-color: gray; "></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="8" style="background-color: gray; "></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" style="height: 550px;" src="{% static 'img/ecommerce/landing.png' %}" >
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" style="height: 550px;" src="{% static 'img/ecommerce/login.png' %}">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" style="height: 550px;" src="{% static 'img/ecommerce/profile.png' %}">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" style="height: 550px;" src="{% static 'img/ecommerce/catalogue.png' %}">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" style="height: 550px;" src="{% static 'img/ecommerce/productdetails.png' %}">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" style="height: 550px;" src="{% static 'img/ecommerce/cart.png' %}">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" style="height: 550px;" src="{% static 'img/ecommerce/payment.png' %}">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" style="height: 550px;" src="{% static 'img/ecommerce/order.png' %}">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" style="height: 550px;" src="{% static 'img/ecommerce/sellerdetails.png' %}">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
+                  <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;" ></span>
+                  <span class="sr-only" ">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"  style="background-color: black;"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    <div class="card">
+      <div class="top-section">
+        
+        <div class="row">
+  
+          <div class="col-4">
+            <div class="content-preview__cat">Project description</div>
+            <p>E-commerce with face recognition system developed using Django Framework consisting of face recognition system for the purpose of mitigating fake identities & product comments.</p>
+          </div>
+  
+          <div class="col-4">
+            <div class="content-preview__cat">User types</div>
+            <h3 class="content-preview__title">Normal user</h3>
+            <p>Ecommerce buyers for this website</p>
+            <h3 class="content-preview__title">Seller</h3>
+            <p>Ecommerce sellers for this website</p>
+          </div>  
+
+          
+          <div class="col-4">
+            <div class="content-preview__cat">Features and functions</div>
+            <h3 class="content-preview__title">Normal user</h3>
+            <p>View catalogue and product details, add product to shopping cart, post comments under product details, make payments, view order history, view seller details</p>
+            <h3 class="content-preview__title">Seller</h3>
+            <p>Perform CRUD (CREATE, READ, UPDATE, DELETE) funtions on products, view customer orders, view product comments</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- TODO  -->
+      <div class="logo">
+        <div class="logo__circle">
+          CP
+        </div>
+        <h2 class="logo__text">New session Buy</h2>
+      </div>
+  
+    
+  
+    </div>
+  </div>
+  <script>
+    $('.carousel').carousel({
+interval: 1000
+})
+</script>
+
+
+ 
+{% endblock %}

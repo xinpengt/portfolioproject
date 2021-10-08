@@ -1,0 +1,102 @@
+{% extends 'base.html ' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row tm-welcome-row">
+    <div class="col-12">
+      <div
+        class="tm-welcome-parallax tm-center-child"
+        data-parallax="scroll"
+        data-image-src="{% static 'img/c.jpg' %}"
+      >
+       
+      </div>
+    </div>
+  </div>
+
+      <section class="row tm-pt-4 tm-mb-3" style="justify-content: center">
+        <div class="col-9 tm-page-cols-container" ">
+          <div class="tm-page-col-left">
+            <div class="tm-contact-container tm-mb-6">
+              <div class="tm-address-container">
+                <h2 class="tm-text-secondary tm-mb-6">Address</h2>
+                <address>
+                  <p>
+                    146, Jalan Pesona 1,<br />
+                    Taman Pelangi Indah,<br />
+                    81800 Ulu Tiram,<br/>
+                    Johor.
+                  </p>
+                </address>
+              </div>
+
+            
+            </div>
+          </div>
+
+          <div class="tm-page-col-right tm-form-container">
+            
+            <div class="col text-center">
+                <h2 class="tm-text-secondary" style="margin-bottom: 40px;">Contact Me</h2>
+                
+               
+                  
+                    <a
+                      href="https://www.facebook.com/tiewxinpeng"
+                      
+                    >
+                      <i class="fa fa-facebook tm-about-social-icon"></i>
+                    </a>
+                  
+                    <a
+                      href="https://www.linkedin.com/in/xin-peng-tiew-112a1421a/"
+                     
+                    >
+                      <i
+                        class="fa fa-linkedin tm-about-social-icon"
+                      ></i>
+                    </a>
+
+                  
+
+                    <a
+                    href="mailto:tiew.xinpeng@gmail.com"
+                   
+                  >
+                    <i
+                      class="fa fa-envelope tm-about-social-icon"
+                    ></i>
+                  </a>
+
+                  <a
+                  href="https://api.whatsapp.com/send?phone=60187890433&text=Hello"
+                 
+                >
+                  <i
+                    class="fa fa-whatsapp tm-about-social-icon"
+                  ></i>
+                </a>
+                 
+
+                <p class="mt-4">Contact number: 018-7890433</p>
+                
+             
+          </div>
+        </div>
+
+      
+        </div>
+
+        <div style="margin-top: 10px; margin-left: auto;margin-right: auto;">
+            <h3 style="font-size: 40px ;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">THANK YOU</h3>
+          <p style="margin-left:30px">
+           for visiting my website
+          </p>
+
+        
+      </div>
+        </div>
+      </section>
+
+    {% endblock %}
